@@ -9,26 +9,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <title>Gabriel portfólio</title>
 </head>
 
 <header id="header" class="">
     <nav class="navbar">    
-        <h2 id="titulo-site"class="">Cremonese: portfólio</h2>
-    <div class="justify-content-end">    
-        <ul class="nav hstack gap-1">
-            <li class='nav-item'><a class="nav-link link-light"href="#sobremim">Sobre Mim</a></li>
-            <li class='nav-item'><a class="nav-link link-light"href="#hobbies">Hobbies</a></li>
-            <li class='nav-item'><a class="nav-link link-light"href="#skills">Skills</a></li>
-            <li class='nav-item'><a class="nav-link link-light"href="#qualificacoes">Qualificações</a></li>
-            <li class='nav-item'><a class="nav-link link-light"href="#experiencia">Meus Desenvolvimentos</a></li>
-            <li class='nav-item'><a class="nav-link link-light"href="#contato">Contato</a></li>
-        </ul>
-    </div>            
+        <h2 id="titulo-site"class="navbar-brand">Cremonese : portfólio</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-backdrop="static" data-bs-target="#offCanvasNavbarTog" aria-controls="offCanvasNavbarTog">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="offcanvas offcanvas-end justify-content-end" id="offCanvasNavbarTog">
+            <div class="head-canvas offcanvas-header">
+                <h2 id="offcanvasNavbarlabel"class="offcanvas-title">Cremonese : portfólio</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="body-canvas offcanvas-body">   
+                <ul id="navbar" class="navbar-nav justify-content-end">
+                    <li class='nav-item'>
+                        <a class="nav-link link-light"href="#sobremim">Sobre Mim</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a class="nav-link link-light"href="#hobbies">Hobbies</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a class="nav-link link-light"href="#skills">Skills</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a class="nav-link link-light"href="#qualificacoes">Qualificações</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a class="nav-link link-light"href="#experiencia">Meus Desenvolvimentos</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a class="nav-link link-light"href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div> 
+        
+        </div>
+                    
     </nav>
+    <div class="welcome">
+        <img src="./asset/png/foto-perfil.jpg" alt="">
+    <div class="text-welcome">
+        <p class=""> Bem vindo ao meu portfólio!</p>
+        <blockquote>Aqui eu me apresento e descrevo algumas experiências vividas e conhecimentos adquiridos.</blockquote>
+    </div>         
+    </div>
 </header>
 <body>
-    <div id="sobremim" class="container-fluid">
+    <div id="sobremim" class="container-fluid h-auto">
         <h3>Sobre Mim</h3>
         <p>Lorem ipsum dolor sit amet. Qui eius mollitia in esse dolorum sit facilis commodi hic enim voluptate vel quod quaerat. Ea ratione quas sit eveniet quasi id vitae veniam et sint internos et quis quae quo dolore magni ut tenetur dolores. Et odio galisum ut laudantium suscipit qui voluptatem culpa ut cumque enim ut saepe blanditiis id delectus dolorum!
 
@@ -36,21 +67,36 @@
             
             Sit ipsa odio vel illum suscipit et repellendus atque. Est deleniti corporis non galisum pariatur et corrupti ipsa est sint excepturi et distinctio quod ea iure quasi ea consequatur assumenda?</p>
     </div>
-    <div class="container-fluid flex-column bloco-central h-auto">
-        <div id="skills" class="h-auto skills">
-            <h3 class="text-center">Skills</h3>
-            <ul class="lista row align-items-center text-center">
-                <li class="itens-lista p-3 col-2"><img class="image-item" src="./asset/png/003-html-5.png" alt=""><p class="text-item">Html 5</p></li>
-                <li class="itens-lista p-3 col-2"><img class="image-item" src="./asset/png/004-css-3.png" alt=""><p class="text-item">CSS 3</p></li>
-                <li class="itens-lista p-3 col-2"><img class="image-item" src="./asset/png/002-js.png" alt=""><p class="text-item">JavaScript</p></li>
-                <li class="itens-lista p-3 col-2"><img class="image-item" src="./asset/png/005-bootstrap.png" alt=""><p class="text-item">Bootstrap</p></li>
-                <li class="itens-lista p-3 col-2"><img class="image-item" src="./asset/png/001-skills.png" alt=""><p class="text-item">Soft skills: Ágeis</p></li>
-                <li class="itens-lista p-4 col-2">
-                    <img class="card-img-top h-25 w-25" src="./asset/png/006-illustrator.png" alt="">
-                    <img class="card-img-top h-25 w-25" src="./asset/png/009-photoshop.png" alt="">
+    <div class=" flex-column align-items-center bloco-central h-auto w-100">
+        <div id="skills" class="h-auto skills">            
+            <ul class="lista row row-cols-lg-4 row-gap-3 m-md-5 row-cols-sm-auto row-cols-xs-10 h-auto d-flex">
+                <li class="text-center col-lg-12 col-md-12 p-3 col-sm-10 h-auto"><h3 class="align-self-center">Skills</h3></li>
+                <li class="itens-lista p-3 col-lg-2 col-sm-6 col-md-12">
+                    <img class="image-item" src="./asset/png/003-html-5.png" alt="">
+                    <p class="text-item">Html 5</p>
+                </li>
+                <li class="itens-lista p-3 col-lg-2 col-sm-6 col-md-12">
+                    <img class="image-item" src="./asset/png/004-css-3.png" alt="">
+                    <p class="text-item">CSS 3</p>
+                </li>
+                <li class="itens-lista p-3 col-lg-2 col-sm-6 col-md-12">
+                    <img class="image-item" src="./asset/png/002-js.png" alt="">
+                    <p class="text-item">JavaScript</p>
+                </li>
+                <li class="itens-lista p-3 col-lg-2 col-sm-6 col-md-12">
+                    <img class="image-item" src="./asset/png/005-bootstrap.png" alt="">
+                    <p class="text-item">Bootstrap</p>
+                </li>
+                <li class="itens-lista p-3 col-lg-2 col-sm-6 col-md-12">
+                    <img class="image-item" src="./asset/png/001-skills.png" alt="">
+                    <p class="text-item">Soft skills: Ágeis</p>
+                </li>
+                <li class="itens-lista p-3 col-lg-2 col-sm-6 col-md-12">
+                    <img class="adobe-image" src="./asset/png/006-illustrator.png" alt="">
+                    <img class="adobe-image" src="./asset/png/009-photoshop.png" alt="">
                     <p></p>
-                    <img class="card-img-bottom h-25 w-25" src="./asset/png/008-premiere-pro.png" alt="">
-                    <img class="card-img-bottom h-25 w-25" src="./asset/png/007-after-effects.png" alt="">
+                    <img class="adobe-image" src="./asset/png/008-premiere-pro.png" alt="">
+                    <img class="adobe-image" src="./asset/png/007-after-effects.png" alt="">
                     <p class="text-item">Pacote adobe</p>
                 </li>
             </ul>
@@ -58,25 +104,25 @@
         <div id="hobbies" class="h-auto hobbies">
             <h3 class="subtitle text-center">Hobbies</h3>
             <ul class="hobbie-list row justify-content-center gap-3 row-cols-2">
-                <li class="hobbie-item col col-5 p-5"><img class="mb-5" src="./asset/png/003-joystick.png" alt="">
+                <li id="hobbie-item" class="col col-5"><img class="mb-5" src="./asset/png/003-joystick.png" alt="">
                     <h3>Jogar</h3>
                     <p class="text-hobbie">
                         Com certeza um dos meu hobbies favoritos é jogar jogos online, principalmente competitivos.
                     </p>
                 </li>
-                <li class="hobbie-item col col-5 p-5"><img class="mb-5" src="./asset/png/002-movie.png" alt="">
+                <li id="hobbie-item" class=" col col-5"><img class="mb-5" src="./asset/png/002-movie.png" alt="">
                     <h3>Maratonar</h3>
                     <p class="text-hobbie">
                         Quando tenho um tempo maior tento por minha lista de filmes e séries em dia!
                     </p>
                 </li>
-                <li class="hobbie-item col col-5 p-5"><img class="mb-5" src="./asset/png/004-workout.png" alt="">
+                <li id="hobbie-item" class="col col-5"><img class="mb-5" src="./asset/png/004-workout.png" alt="">
                     <h3>Treinar</h3>
                     <p class="text-hobbie">
                         Também estou focado nas atividades físicas, praticando musculação.
                     </p>
                 </li>
-                <li class="hobbie-item col col-5 p-5"><img class="mb-5" src="./asset/png/001-study.png" alt="">
+                <li id="hobbie-item" class="col col-5"><img class="mb-5" src="./asset/png/001-study.png" alt="">
                     <h3>Estudar</h3>
                     <p class="text-hobbie">
                         E como ando aprendendo algo novo, a programar, meu hobbie diário é estudar.
@@ -85,36 +131,105 @@
             </ul>
         </div>
     </div>
-    <div id="qualificacoes" class="bloco-mediano h-auto flex-column">
-        <h3 class="">Qualificações e Experiências</h3>
+    <div id="qualificacoes" class="bloco-mediano h-auto">
+        <h3 class="quali-title">Qualificações e Experiências</h3>
 
         <div class="itens-exp">
             <img class="img-exp" src="./asset/png/Santander-Logo.png" alt="">
-            <p class="text-exp">Experiência Santander</p>
+            <p class="text-exp">Lorem ipsum dolor sit amet. Qui eius mollitia in esse dolorum sit facilis commodi hic enim voluptate vel quod quaerat. Ea ratione quas sit eveniet quasi id vitae veniam et sint internos et quis quae quo dolore magni ut tenetur dolores. Et odio galisum ut laudantium suscipit qui voluptatem culpa ut cumque enim ut saepe blanditiis id delectus dolorum!
+                Et animi dolor ut veniam perferendis rem cumque nisi et autem voluptatem 33 reiciendis debitis. Ex ullam assumenda in quia voluptatem non nisi esse qui galisum ipsam.
+                Sit ipsa odio vel illum suscipit etr</p>
         </div>
         
         <div class="itens-quali item-W">
-            <p class="text-quali">SENAC</p>            
+            <p class="text-quali">Lorem ipsum dolor sit amet. Qui eius mollitia in esse dolorum sit facilis commodi hic enim voluptate vel quod quaerat. Ea ratione quas sit eveniet quasi id vitae veniam et sint internos et quis quae quo dolore magni ut tenetur dolores. Et odio galisum ut laudantium suscipit qui voluptatem culpa ut cumque enim ut saepe blanditiis id delectus dolorum!
+                Et animi dolor ut veniam perferendis rem cumque nisi et autem voluptatem 33 reiciendis debitis. Ex ullam assumenda in quia voluptatem non nisi esse qui galisum ipsam.
+                Sit ipsa odio vel illum suscipit et</p>            
             <img class="img-quali" src="./asset/png/Senac_logo.png" alt="">
         </div>            
         
         <div class="itens-quali item-B">
             <img class="img-quali" src="./asset/png/Alura.jpg" alt="">
-            <p class="text-quali">ALURA</p>
+            <p class="text-quali">Lorem ipsum dolor sit amet. Qui eius mollitia in esse dolorum sit facilis commodi hic enim voluptate vel quod quaerat. Ea ratione quas sit eveniet quasi id vitae veniam et sint internos et quis quae quo dolore magni ut tenetur dolores. Et odio galisum ut laudantium suscipit qui voluptatem culpa ut cumque enim ut saepe blanditiis id delectus dolorum!
+                Et animi dolor ut veniam perferendis rem cumque nisi et autem voluptatem 33 reiciendis debitis. Ex ullam assumenda in quia voluptatem non nisi esse qui galisum ipsam.
+                Sit ipsa odio vel illum suscipit et</p>
         </div>
         
         <div class="itens-quali item-W">            
-            <p class="text-quali">GCP</p>
+            <p class="text-quali">Lorem ipsum dolor sit amet. Qui eius mollitia in esse dolorum sit facilis commodi hic enim voluptate vel quod quaerat. Ea ratione quas sit eveniet quasi id vitae veniam et sint internos et quis quae quo dolore magni ut tenetur dolores. Et odio galisum ut laudantium suscipit qui voluptatem culpa ut cumque enim ut saepe blanditiis id delectus dolorum!
+                Et animi dolor ut veniam perferendis rem cumque nisi et autem voluptatem 33 reiciendis debitis. Ex ullam assumenda in quia voluptatem non nisi esse qui galisum ipsam.
+                Sit ipsa odio vel illum suscipit et</p>
             <img class="img-quali" src="./asset/png/Google-Cloud-Logo.png" alt="">
         </div>
         
         <div class="itens-quali item-B">
             <img class="img-quali" src="./asset/png/arq.png" alt="">
-            <p class="text-quali">ARQUITETURA E URBANISMO</p>
+            <p class="text-quali">ALorem ipsum dolor sit amet. Qui eius mollitia in esse dolorum sit facilis commodi hic enim voluptate vel quod quaerat. Ea ratione quas sit eveniet quasi id vitae veniam et sint internos et quis quae quo dolore magni ut tenetur dolores. Et odio galisum ut laudantium suscipit qui voluptatem culpa ut cumque enim ut saepe blanditiis id delectus dolorum!
+
+                Et animi dolor ut veniam perferendis rem cumque nisi et autem voluptatem 33 reiciendis debitis. Ex ullam assumenda in quia voluptatem non nisi esse qui galisum ipsam.
+                
+                Sit ipsa odio vel illum suscipit et</p>
         </div>
         
     </div>  
-    <div id="experiencia"><p>Meus projetos 😥</p> </div>
-
+    <h3 class="text-center p-3">Projetos pessoais</h3>
+    <div class="bloco-exp p-sm-2 p-lg-5  d-flex justify-content-around g-3 h-auto" id="experiencia">        
+        <div class="card m-2">
+            <img class="card-img-top" src="./asset/png/portfolio_image.PNG" alt="">
+            <div class="card-body">
+                <p class="">Página do meu portifólio onde descrevo um pouco sobre mim e sobre meus conhecimentos na área de TI.</p>
+                <a class="button-card btn bg-opacity-50" href="https://github.com/Cremonese/Challenge-portfolio.git">Portifólio</a>
+            </div>
+        </div> 
+        <div class="card m-2">
+            <img class="card-img-top" src="./asset/png/decodificador-image.PNG" alt="">
+            <div class="card-body">
+                <p class="">Challenge para desenvolver um decodificador de mensagens, utilizando HTML5-CSS3-JavaScript.</p>
+                <a class="button-card btn bg-opacity-50" href="https://github.com/Cremonese/Challenge-One-Alura.git">Decodificador</a>
+            </div>            
+        </div>
+        <div class="card m-2">
+            <img class="card-img-top" src="./asset/png/decodificador-image.PNG" alt="">
+            <div class="card-body">
+                <p class="">Challenge para desenvolver um decodificador de mensagens, utilizando HTML5-CSS3-JavaScript.</p>
+                <a class="button-card btn  bg-opacity-50" href="https://github.com/Cremonese/Challenge-One-Alura.git">Decodificador</a>
+            </div>            
+        </div>
+    </div>
+    <div id="contato" class="bloco-final">
+        <h3 class="text-center p-4">Cont(r)ate-me</h3>
+        <img class="contact-img float-end" src="./asset/png/contact-image.png" alt="">
+        <form class="formulario p-4 gap-4 d-flex flex-column align-items-start" action="">
+            
+            <div class="d-flex w-100 justify-content-between">
+                <label for="nameUser" class="form-label">Nome:</label>
+                <input class="form-control w-75" type="text" id="nameUser">
+            </div>
+            <div class="d-flex w-100 justify-content-between">
+                <label for="emailUser" class="form-label">E-mail:</label>
+                <input class="form-control w-75" type="email" id="emailUser">
+            </div>
+            <div class="d-flex w-100 justify-content-between">
+                <label for="subjectUser" class="form-label">Assunto:</label>
+                <input class="form-control w-75" type="text" id="subjectUser">
+            </div>
+            <div class="msg-user d-flex w-100 justify-content-between">
+                <label for="msgUser" class="form-label">Mensagem:</label>
+                <input class="form-control w-75" type="text" id="msgUser">
+            </div>
+            <div class="d-flex w-100 justify-content-between">
+                <label for="fileUser" class="form-label">Arquivo:</label>
+                <input class="form-control w-75" type="file" id="fileUser">
+            </div>
+            <div class="d-flex w-75 align-self-end">
+                <label for="subUser" class="form-label"></label>
+                <input class="btn btn-primary form-control" type="submit" id="subUser">
+            </div>
+        </form>
+    </div>
 </body>
+<button id="topButton" title="Go to top"><a class="text-decoration-none text-light" href="#header">Subindo </a></button>
+<footer class="text-center footer">
+    <p>Todos os direitos reservados®</p>
+</footer>
 </html>

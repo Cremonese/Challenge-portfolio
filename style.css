@@ -1,4 +1,5 @@
 body{
+    width: auto;
     justify-content: center;
 }
 
@@ -13,12 +14,53 @@ h1,h2,h3,h4,h5,h6{
     padding: 1% 5%;
     height: 500px;
     background-color: #567189;
+    
+}
+
+.welcome{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 17%;
+    width: 100%;
+    justify-content: center;
+    text-align: start;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f6ca8e;
+    position: relative;
+    left: 1rem;
+    top: 3rem;
+}
+
+.welcome blockquote{
+    font-size: .8rem;
+    line-height: 1;
+    font-weight: normal;
+}
+
+.welcome img{
+    width: 25%;
+    border-radius: 50%;
+    display: inline;
+    position: relative;
+    float: right;
+    left: 0;
 }
 
 #titulo-site{
     font-size: 1.8rem;
     color:  #FAD6A5;
     padding: 1%;
+}
+
+.head-canvas{
+    color: #567189;
+    background-color: #f6ca8e;
+}
+
+.body-canvas{
+    background-color: #567189;
 }
 
 /* Body */
@@ -37,7 +79,7 @@ h1,h2,h3,h4,h5,h6{
 
 .bloco-central{
     display: flex;
-    height: 1225px;
+    height: auto;
 }
 
 
@@ -46,7 +88,8 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .skills{
-    padding: 5% 5% 2% 5%;
+    width: 80rem;
+    padding: 5% 0% 5% 0%;
 }
 
 .itens-lista{
@@ -80,6 +123,10 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 4%;
 }
 
+.adobe-image{
+    width: 20%;
+}
+
 .lista{
     margin: 0 5%;
     padding-left: 0;
@@ -100,31 +147,28 @@ h1,h2,h3,h4,h5,h6{
     
 }
 
-.hobbie-item{
+#hobbie-item{
+    padding: 5%;
     background-color: #FAD6A5;
     -webkit-text-fill-color: #567189;
     font-family: Ubuntu, sans-serif;
     font-size: 1rem;
     font-weight: 700;
-    transition-property: all;
-    transition-duration: 300ms;
-    transition-delay: 100ms;
-    transition-timing-function: ease-in-out;
-
-}
-.hobbie-item:hover{
-    font-weight: 700;
-
 }
 
-.hobbie-item img{
+#hobbie-item img{
     width: 25%;
 }
 
 .bloco-mediano{
     padding: 3% 0 3% 0;
     display: flex;
+    flex-direction: column;
     background-color: #567189;
+}
+
+.quali-title{
+    color: #f6ca8e;
 }
 
 #qualificacoes p{
@@ -165,7 +209,7 @@ h1,h2,h3,h4,h5,h6{
 .itens-quali{
     display: flex;    
     align-items: center;
-    padding: 4%;
+    padding: 8%;
     height: auto;
     justify-content: space-around;
     gap: 3.5rem;
@@ -182,5 +226,316 @@ h1,h2,h3,h4,h5,h6{
     font-family:'Ubuntu',sans-serif;
     font-weight: 500;
     text-align: center;
-    line-height: 0;
+    line-height: 1.5;
+}
+
+.bloco-exp{
+    margin: 2% 5%;
+}
+
+.bloco-exp .button-card{
+    background-color: #f6ca8e;
+}
+
+.bloco-exp .button-card:hover{
+    transition: ease-in-out;
+    transition-duration: 300ms;
+    transition-delay: 200ms;
+    background-color: #FAD6A5 ;
+}
+
+.bloco-final{
+    background-color: #f6ca8e;
+}
+
+.contact-img{
+    width: 40%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.formulario{
+    justify-content: space-around;
+    width: 50%;
+}
+
+.formulario label{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: #567189;
+}
+
+.msg-user{
+    height: 10rem;
+}
+
+#topButton{
+    display: block;
+    position: fixed;
+    cursor:pointer;
+    right: 30px;
+    bottom: 20px;
+    border: none;
+    width: 8rem;
+    padding: .5%;
+    border-radius: 10px;
+    background-color: #567189;
+}
+
+footer{
+    display: flex;
+    color: #FAD6A5;
+    background-color:  #7B8FA1;
+    justify-content: space-around;
+    align-items: center;
+    height: 6rem;
+}
+
+@media (min-width: 767px) and (max-width: 992px){
+
+    .welcome{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 10%;
+        width: 100%;
+        justify-content: center;
+        text-align: start;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #f6ca8e;
+        position: relative;
+        left: 1rem;
+        top: 3rem;
+    }
+    
+    .welcome blockquote{
+        font-size: .9rem;
+        line-height: 1;
+        font-weight: normal;
+    }
+    
+    .welcome img{
+        width: 35%;
+        box-shadow: -5px 10px 5px rgb(0, 0, 0, 25%);
+        border-radius: 50%;
+        display: inline;
+        position:relative;
+        margin: 0 15% 0 0;
+        left: 0;
+        top:0;
+    }
+
+    #sobremim{
+        padding: 5%;
+    }
+    
+    .skills{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #hobbie-item{
+        padding: 2%;
+        background-color: #FAD6A5;
+        -webkit-text-fill-color: #567189;
+        font-family: Ubuntu, sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .lista{
+        text-align: center;
+    }
+
+    .itens-lista{
+
+        background-color: #f6ca8e;  
+        font-weight: 700;    
+        font-family: Ubuntu, sans-serif;
+        image-rendering: optimizeQuality;    
+        -webkit-transition-timing-function: none;
+        -webkit-transition-duration: 0;
+        -webkit-transition-delay: 0;
+        transition-duration: 0;
+        transition-delay: 0;
+        transition-timing-function: none;   
+       -webkit-text-fill-color: #567189;
+    }
+
+    .image-item{
+        width:12%;
+    }
+    .adobe-image{
+        width: 7%;
+    }
+
+    .itens-lista p img{
+        align-items: center;
+    }
+
+    .bloco-mediano{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .itens-quali{
+        padding: 5%;
+    }
+    .img-quali{
+        width: 25%;
+    }
+
+    .bloco-exp{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .contact-img{
+        width: 40%;
+        margin-right: 5%;
+        margin-top: 10%;
+    }
+
+    .formulario label{
+        font-size: .9rem;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+
+    .welcome{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20%;
+        width: auto;
+        justify-content: space-between;
+        text-align: start;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #f6ca8e;
+        position: relative;
+        left: 1rem;
+        top: 3rem;
+    }
+
+    .welcome p{
+        margin-top: 2%;
+    }
+    
+    .welcome blockquote{
+        margin-top: 2%;
+        font-size: .7rem;
+        line-height: 1;
+        font-weight: normal;
+    }
+    
+    .welcome img{
+        width: 45%;
+        box-shadow: -5px 10px 5px rgb(0, 0, 0, 25%);
+        border-radius: 50%;
+        display: flex;
+        position: relative;
+        margin: 0 15% 5% 0;
+        left: 0;
+        top:0;
+    }
+
+
+    #sobremim{
+        padding: 5%;
+    }
+
+    .skills{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 50%;
+    }
+
+    #hobbie-item{
+        padding: 3%;
+        background-color: #FAD6A5;
+        -webkit-text-fill-color: #567189;
+        font-family: Ubuntu, sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .lista{
+        text-align: center;
+    }
+
+    .itens-lista{
+
+        margin-top: 3%;
+        background-color: #f6ca8e;  
+        font-weight: 700;    
+        font-family: Ubuntu, sans-serif;
+        image-rendering: optimizeQuality;    
+        -webkit-transition-timing-function: none;
+        -webkit-transition-duration: 0;
+        -webkit-transition-delay: 0;
+        transition-duration: 0;
+        transition-delay: 0;
+        transition-timing-function: none;   
+       -webkit-text-fill-color: #567189;
+    }
+
+    .image-item{
+        align-self: center;
+    }
+    .text-item{
+        align-self: center;
+    }
+    .adobe-image{
+        width: 15%;
+    }
+
+    .bloco-mediano{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .itens-quali{
+        display: flex;
+        padding: 10%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-quali{
+        width: 25%;
+    }
+
+    .bloco-exp{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    
+    .card{
+        margin: 3% 0;
+    }
+
+    .contact-img{
+        display: none;
+    }
+    .formulario{
+        width: 100%;
+    }
+    .formulario label{
+        font-size: .8rem;
+        font-weight: 500;
+    }
 }
