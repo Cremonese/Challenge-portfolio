@@ -89,7 +89,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .skills{
-    width: 80rem;
+    width: 100%;
     padding: 5% 0% 5% 0%;
 }
 
@@ -140,6 +140,9 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .hobbie-list{
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
     padding-left: 0;
 }
 
