@@ -34,9 +34,20 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .welcome blockquote{
-    font-size: .8rem;
-    line-height: 1;
+    font-size: 1rem;
+    line-height: 2;
     font-weight: normal;
+}
+
+.icon-link{
+    font-size: .8rem;
+    color: #f6ca8e;
+    text-decoration: none;
+    margin-right: 12px;
+}
+.icon{
+    color: #f6ca8e;
+    margin-right: 6px;
 }
 
 .welcome img{
@@ -89,35 +100,27 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .skills{
-    width: 80rem;
+    width: 100%;
     padding: 5% 0% 5% 0%;
 }
 
 .itens-lista{
 
-    background-color: #ffffff;  
+    background-color: #ffffff;
+    color: #ffffff;
     font-weight: 700;    
     font-family: Ubuntu, sans-serif;
-    image-rendering: optimizeQuality;    
-    -webkit-transition-timing-function: ease-in-out;
-    -webkit-transition-duration: 400ms;
-    -webkit-transition-delay: 200ms;
-    transition-duration: 400ms;
-    transition-delay: 200ms;
+    transition: all;
+    transition-duration: 200ms;
+    transition-delay: 100ms;
     transition-timing-function: ease-in-out;   
-   -webkit-text-fill-color: #ffffff;
+   
 }
 
 
 .itens-lista:hover{
-    -webkit-transition-timing-function: ease-in-out;
-    -webkit-transition-duration: 400ms;
-    -webkit-transition-delay: 200ms;
-    transition-duration: 400ms;
-    transition-delay: 200ms;
-    transition-timing-function: ease-in-out; 
+    color: #567189;
     background-color: #FAD6A5;
-    -webkit-text-fill-color: #567189;
     
 }
 .itens-lista p{
@@ -141,6 +144,7 @@ h1,h2,h3,h4,h5,h6{
 
 .hobbie-list{
     padding-left: 0;
+    width: 100%;
 }
 
 .text-hobbie{
@@ -255,9 +259,27 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 5%;
 }
 
+.aplica-erro{
+    border-radius: 3px;
+    border: red 2px solid;
+    padding: .3rem;
+    width: 100%;
+    background-color: #ffffff;    
+}
+
 .formulario{
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
     width: 50%;
+}
+
+.inputs{
+    border-radius: 3px;
+    border: none;
+    padding: .3rem;
+    width: 100%;
+    background-color: #ffffff;
 }
 
 .formulario label{
@@ -266,16 +288,33 @@ h1,h2,h3,h4,h5,h6{
     color: #567189;
 }
 
-.msg-user{
-    height: 10rem;
+.mensagem-erro{
+    display: none;
 }
+
+.mensagem-erro-true{
+    display: block;
+    margin-left: 10px;
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+    letter-spacing: .2rem;
+}
+
+
+.msg-user{
+    resize: none;    
+    word-break: break-all;
+}
+
+
 
 #topButton{
     display: block;
     position: fixed;
     cursor:pointer;
     right: 30px;
-    bottom: 20px;
+    bottom: 35px;
     border: none;
     width: 8rem;
     padding: .5%;
