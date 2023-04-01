@@ -192,32 +192,38 @@
     </div>
     <div id="contato" class="bloco-final">
         <h3 class="text-center p-4">Cont(r)ate-me</h3>
-        <img class="contact-img float-end" src="./asset/png/contact-image.png" alt="">
-        <form class="formulario p-4 gap-4 d-flex flex-column align-items-start" action="">
-            
+        <img class="contact-img float-end" src="./asset/png/contact-image.png" alt="Imagem de um rapaz no computador">
+        <form class="formulario p-4 gap-4 d-flex flex-column align-items-start" action="https://formsubmit.co/gabrielcremonese.s@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5501/sucess.html">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_autoresponse" value="Mensagem recebida!">            
             <div class="d-flex flex-column w-100 justify-content-between">
                 <label for="nameUser" class="form-label">*Nome:</label>
-                <input class="inputs w-100" type="text" id="nameUser" data-tipo="nome" required>
+                <input type="hidden" name="_template" value="table">
+                <input class="inputs w-100" type="text" id="nameUser" name="Nome" data-tipo="nome" required>
                 <span class="mensagem-erro">Este campo não esta válido!</span>
             </div>
             <div class="d-flex flex-column w-100 justify-content-between">
                 <label for="emailUser" class="form-label">*E-mail:</label>
-                <input class="inputs w-100" type="email" id="emailUser" data-tipo="email" required>
+                <input type="hidden" name="_template" value="table">
+                <input class="inputs w-100" type="email" id="emailUser" name="E-mail" data-tipo="email" required>
                 <span class="mensagem-erro">Este campo não esta válido!</span>
             </div>
             <div class="d-flex flex-column w-100 justify-content-between">
                 <label for="subjectUser" class="form-label">*Assunto:</label>
-                <input class="inputs w-100" type="text" id="subjectUser" max="9" data-tipo="assunto" required>
+                <input type="hidden" name="_template" value="table">
+                <input class="inputs w-100" type="text" id="subjectUser" max="9"  name="Assunto"  data-tipo="assunto" required>
                 <span class="mensagem-erro">Este campo não esta válido!</span>
             </div>
             <div class="d-flex flex-column w-100 justify-content-between">
                 <label for="msgUser" class="form-label">*Mensagem:</label>
-                <textarea cols="10" rows="10" class="inputs w-100 msg-user" type="text" max="300" id="msgUser" data-tipo="mensagem" required></textarea>
+                <input type="hidden" name="_template" value="table">
+                <textarea cols="10" rows="10" class="inputs w-100 msg-user" type="text" max="300" id="msgUser" data-tipo="mensagem" name="Mensagem" required></textarea>
                 <span class="mensagem-erro" id="mensagemDeErro">Este campo não esta válido!</span>
             </div>
             <div class="d-flex w-100 align-self-center">
                 <label for="subUser" class="form-label"></label>
-                <button class="btn btn-primary w-75" type="submit" id="subUser" disabled><a class="link-light text-decoration-none" href="mailto:gabrielcremonese.s@gmail.com" target="_parent">Enviar</a></button>
+                <button class="btn btn-primary w-75" type="submit" id="subUser"><a class="link-light text-decoration-none" href="mailto:gabrielcremonese.s@gmail.com" target="_parent">Enviar</a></button>
             </div>
         </form>
     </div>

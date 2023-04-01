@@ -261,7 +261,7 @@ h1,h2,h3,h4,h5,h6{
 
 .aplica-erro{
     border-radius: 3px;
-    border: red 2px solid;
+    border: rgb(231, 88, 88) 2px solid;
     padding: .3rem;
     width: 100%;
     background-color: #ffffff;    
@@ -294,11 +294,15 @@ h1,h2,h3,h4,h5,h6{
 
 .mensagem-erro-true{
     display: block;
+    font-size: .9rem;
     margin-left: 10px;
-    color: red;
-    font-weight: bold;
-    text-decoration: underline;
+    color: rgb(231, 88, 88);
+    font-weight: 700;
+    text-decoration: none;
     letter-spacing: .2rem;
+}
+.mensagem-erro-true::before{
+    content: \F4B7;
 }
 
 

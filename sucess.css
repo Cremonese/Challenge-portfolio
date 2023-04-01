@@ -1,0 +1,83 @@
+body{
+    background-color: #FAD6A5;
+}
+
+.button-back{
+    position: absolute;
+    top: 10%;
+    right: 18%;
+    border: #7B8FA1 2px solid;
+    padding: .8% 1.3%;
+    background-color: #FAD6A5;
+}
+.button-link{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    text-transform: none;
+    color: #7B8FA1;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 45%;
+    margin-left: 17%;
+    margin-top: 10%;
+    padding: 10%;
+    background-color: #7B8FA1;
+    border: transparent;
+}
+
+.text-title{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+    color: #FAD6A5;
+    margin-bottom: 10px;    
+}
+
+.text-paragraph{
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+    color: #2f5c84;
+}
+
+@media (min-width: 250px) and (max-width: 585px){
+
+    .container{
+        margin-top: 40%;
+    }
+    
+    .button-back{
+        display: block;
+        position: fixed;
+        top: 2%;
+        right: 2%;
+        border: #7B8FA1 2px solid;
+        padding: .8% 1.3%;
+        background-color: #FAD6A5;
+    }
+
+    .text-title{
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: 'Ubuntu',sans-serif;
+        text-align: center;
+        color: #FAD6A5;
+        margin-bottom: 10px;    
+    }
+
+    .text-paragraph{
+        font-size: .8rem;
+        font-weight: 600;
+        text-align: center;
+        font-family: 'Ubuntu',sans-serif;
+        color: #2f5c84;
+    }
+
+}

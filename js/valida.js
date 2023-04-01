@@ -57,20 +57,20 @@ const tipoErro = [
 const mensagemErro = {
 
     nome: {
-        valueMissing: 'O campo nome não pode estar vazio.',
-        customError: 'O texto é longo demais, coloque apenas o necessário. (Máx 50 caracteres)'
+        valueMissing: '! O campo nome não pode estar vazio.',
+        customError: '! O texto é longo demais, coloque apenas o necessário. (Máx 50 caracteres)'
     },
     email: {
-        valueMissing: 'O campo E-mail não pode estar vazio.',
-        typeMismatch: 'O Email não é válido.'
+        valueMissing: '! O campo E-mail não pode estar vazio.',
+        typeMismatch: '! O Email não é válido.'
     },
     assunto: {
-        valueMissing: 'O campo assunto não pode estar vazio.',
-        customError: 'O texto é longo demais, coloque apenas o necessário. (Máx 50 caracteres)'
+        valueMissing: '! O campo assunto não pode estar vazio.',
+        customError: '! O texto é longo demais, coloque apenas o necessário. (Máx 50 caracteres)'
     },
     mensagem: {
-        valueMissing: 'O campo mensagem não pode estar vazio.',
-        customError: 'O máximo de caracteres foi excedido!'
+        valueMissing: '! O campo mensagem não pode estar vazio.',
+        customError: '! O máximo de caracteres foi excedido!'
     }
 }
 
